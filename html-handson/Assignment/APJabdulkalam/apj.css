@@ -1,0 +1,20 @@
+body {
+    background-color: green;
+    text-align: center;
+  }
+.center {
+    margin: auto;
+    color: lightgreen;
+    width: 60%;
+  border: 3px solid #73AD21;
+  background-color: rgb(115, 211, 115);
+  padding: 20px;
+    
+}
+h2{
+    color: white;
+}
+p{
+    color: rgb(44, 40, 40);
+    text-align: left;
+}
