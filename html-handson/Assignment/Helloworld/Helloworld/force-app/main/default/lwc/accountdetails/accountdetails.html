@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Account details" icon-name="custom:custom14">
+        <div class="acc-container">
+         <lightning-record-view-form
+         record-id={recordId}
+         object-api-name="Account"
+    >
+        
+         <div class="slds-grid slds-box slds-theme_alert-texture">
+            <div class="slds-col">
+                <lightning-output-field field-name="Name"></lightning-output-field>
+                <lightning-output-field field-name="AccountNumber"></lightning-output-field>
+            </div> 
+            <div class="slds-col">
+                <lightning-output-field field-name ="status_c"></lightning-output-field>
+                <lightning-output-field filed-name = "phone"></lightning-output-field>
+
+            </div>
+            <div class="slds-col">
+                <lightning-output-field field-name="Type"></lightning-output-field>
+                <lightning-output-field field-name="Rating"></lightning-output-field>
+            </div>
+         </div>
+        </lightning-record-view-form>
+        </div>
+      </lightning-card>
+    
+</template>
