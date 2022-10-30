@@ -1,0 +1,3 @@
+Create custom buttons and links. Add them to a page layout. Explain the difference between a custom button and a custom link. #bookmark
+https://trailhead.salesforce.com/content/learn/modules/lex_customization/lex_customization_buttons_links
+
