@@ -1,0 +1,21 @@
+<template>
+    <lightning-record-edit-form 
+    object-api-name="Account" 
+    onsubmit={submitHandler} 
+    onsuccess={successHandler}>
+
+        <div class="slds-grid">
+            <div class="slds-box slds-col slds-size_1-of-2">
+                <lightning-input-field field-name="Name"></lightning-input-field>
+                <lightning-input-field field-name="Phone"></lightning-input-field>
+                <lightning-input-field field-name="Status__c"></lightning-input-field>
+                </div>
+                
+        </div>
+        <lightning-button title="save" label="save" type="submit" variant="brand"></lightning-button>
+
+     </lightning-record-edit-form>
+     
+    
+</template>
+
