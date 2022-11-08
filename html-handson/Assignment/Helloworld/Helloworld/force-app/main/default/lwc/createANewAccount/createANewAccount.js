@@ -1,5 +1,5 @@
 import { LightningElement } from 'lwc';
-
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 export default class CreateANewAccount extends LightningElement {
 
@@ -13,17 +13,20 @@ export default class CreateANewAccount extends LightningElement {
     }
 
     successHandler(event) {
-        window.history.back();
-
-        window.history.reload();
-
-        // const evt = new ShowToastEvent({
-        //     title: 'Account Created!',
-        //     message: 'Record ID: ' + event.detail.id,
-        //     variant: 'success',
-        // });
         
-        // this.dispatchEvent(evt);
-        
+
+       
+
+            const evt = new ShowToastEvent({
+                title: 'Toast message',
+                message: 'Toast Message',
+                variant: 'success',
+                mode: 'dismissable'
+            });
+            this.dispatchEvent(evt);
+            window.history.back();
+            //window.history.reload();
+
     }
+
 }
